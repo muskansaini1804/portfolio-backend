@@ -31,6 +31,6 @@ module.exports = async (req, res) => {
     });
   } catch (error) {
     console.log("Error:", error);
-    res.status(500).send({ error: "Already Existed" });
+    res.status(500).send({ error: error });
   }
 };
